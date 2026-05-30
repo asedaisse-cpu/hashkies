@@ -19,11 +19,13 @@ const Hero = () => {
           </div>
         </div>
         <div className="mt-12 lg:mt-0 lg:w-1/2 relative">
-          <div className="aspect-square bg-terracotta/10 rounded-full flex items-center justify-center p-8">
-             <img 
-              src={`${import.meta.env.BASE_URL}hashkies-logo.png`} 
-              alt="Delicious East African Food" 
-              className="w-full h-auto drop-shadow-2xl"
+          <div className="relative">
+            <div className="absolute -top-4 -left-4 w-32 h-32 bg-terracotta rounded-full opacity-20 -z-10"></div>
+            <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-leaf-green/20 rounded-full -z-10"></div>
+            <img 
+              src={`${import.meta.env.BASE_URL}hashkies-hero.png`}
+              alt="Authentic East African Cuisine - Anjera & Mufo" 
+              className="w-full h-auto rounded-2xl shadow-2xl"
             />
           </div>
         </div>

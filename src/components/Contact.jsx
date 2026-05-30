@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Contact form submitted:', formData);
+    alert('Thank you for your message! We will get back to you soon.');
+    setFormData({ name: '', email: '', message: '' });
+  };
+
   return (
     <section id="contact" className="bg-white">
       <div className="section-container">
@@ -33,7 +46,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-charcoal">Phone</h4>
-                  <p className="text-charcoal/70">+245 790 489 548</p>
+                  <p className="text-charcoal/70">+254 700 000 000</p>
                 </div>
               </div>
               
@@ -53,18 +66,39 @@ const Contact = () => {
           
           <div className="lg:w-1/2 bg-cream/30 p-8 rounded-2xl border border-cream">
             <h3 className="text-2xl text-charcoal mb-6">Send us a message</h3>
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-charcoal mb-1">Full Name</label>
-                <input type="text" className="w-full px-4 py-2 rounded-md border border-cream focus:outline-none focus:ring-2 focus:ring-terracotta" placeholder="Your name" />
+                <input 
+                  type="text" 
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  className="w-full px-4 py-2 rounded-md border border-cream focus:outline-none focus:ring-2 focus:ring-terracotta" 
+                  placeholder="Your name" 
+                />
               </div>
               <div>
                 <label className="block text-sm font-medium text-charcoal mb-1">Email Address</label>
-                <input type="email" className="w-full px-4 py-2 rounded-md border border-cream focus:outline-none focus:ring-2 focus:ring-terracotta" placeholder="Your email" />
+                <input 
+                  type="email" 
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  className="w-full px-4 py-2 rounded-md border border-cream focus:outline-none focus:ring-2 focus:ring-terracotta" 
+                  placeholder="Your email" 
+                />
               </div>
               <div>
                 <label className="block text-sm font-medium text-charcoal mb-1">Message</label>
-                <textarea rows="4" className="w-full px-4 py-2 rounded-md border border-cream focus:outline-none focus:ring-2 focus:ring-terracotta" placeholder="How can we help?"></textarea>
+                <textarea 
+                  rows="4" 
+                  required
+                  value={formData.message}
+                  onChange={(e) => setFormData({...formData, message: e.target.value})}
+                  className="w-full px-4 py-2 rounded-md border border-cream focus:outline-none focus:ring-2 focus:ring-terracotta" 
+                  placeholder="How can we help?"
+                ></textarea>
               </div>
               <button type="submit" className="w-full btn-primary">Send Message</button>
             </form>

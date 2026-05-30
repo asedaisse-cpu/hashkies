@@ -29,9 +29,9 @@ const About = () => {
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-terracotta rounded-full -z-10"></div>
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-leaf-green/20 rounded-full -z-10"></div>
               <img 
-                src={`${import.meta.env.BASE_URL}hashkies-logo.png`} 
+                src={`${import.meta.env.BASE_URL}ethiopian-anjera.png`} 
                 alt="Cooking Tradition" 
-                className="rounded-2xl shadow-2xl w-full h-auto bg-white p-12"
+                className="rounded-2xl shadow-2xl w-full h-auto"
               />
             </div>
           </div>

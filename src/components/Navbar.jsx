@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <img className="h-12 w-auto" src={`${import.meta.env.BASE_URL}hashkies-logo.png`} alt="Hashkies Logo" />
+            <img className="h-12 w-auto" src="/hashkies-logo.png" alt="Hashkies Logo" />
             <span className="ml-3 text-2xl font-heading font-bold text-terracotta">Hashkies</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
