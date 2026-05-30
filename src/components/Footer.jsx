@@ -55,7 +55,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/40 text-sm">
           <p>&copy; {new Date().getFullYear()} Hashkies East African Takeaway. All rights reserved.</p>
-          <p className="mt-4 md:mt-0">Designed for Nairobi life.</p>
+          <p className="mt-4 md:mt-0">Authentic East African taste, delivered to you.</p>
         </div>
       </div>
     </footer>
