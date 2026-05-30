@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+.btn-primary {
+  @apply bg-terracotta text-white px-6 py-3 rounded-md font-bold transition-colors hover:bg-opacity-90;
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8;
+}
