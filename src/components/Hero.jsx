@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="mt-12 lg:mt-0 lg:w-1/2 relative">
           <div className="aspect-square bg-terracotta/10 rounded-full flex items-center justify-center p-8">
              <img 
-              src="/hashkies-logo.png" 
+              src={`${import.meta.env.BASE_URL}hashkies-logo.png`} 
               alt="Delicious East African Food" 
               className="w-full h-auto drop-shadow-2xl"
             />

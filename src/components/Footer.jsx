@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center mb-6">
-              <img className="h-10 w-auto" src="/hashkies-logo.png" alt="Hashkies Logo" />
+              <img className="h-10 w-auto" src={`${import.meta.env.BASE_URL}hashkies-logo.png`} alt="Hashkies Logo" />
               <span className="ml-3 text-2xl font-heading font-bold text-terracotta">Hashkies</span>
             </div>
             <p className="text-white/60 leading-relaxed">
