@@ -3,17 +3,17 @@ import React from 'react';
 const menuItems = [
   {
     id: 1,
-    name: 'Special Ethiopian Anjera Combo',
+    name: 'Special Ethiopian Anjera',
     description: 'Fresh spongy Anjera served with Doro Wat (spicy chicken stew), Misir Wot (lentils), and Gomen (collard greens).',
-    price: '1,200',
+    price: '800',
     category: 'Anjera',
     image: 'ethiopian-anjera.png'
   },
   {
     id: 2,
-    name: 'Somali Mufo Goat Platter',
-    description: 'Authentic golden-brown Mufo cornbread paired with tender braised goat meat, fresh banana, and Basbaas sauce.',
-    price: '1,400',
+    name: 'Somali Mufo (4 pcs)',
+    description: 'Authentic golden-brown Mufo cornbread served with tender braised goat or beef, fresh banana, and Basbaas sauce.',
+    price: '400',
     category: 'Mufo',
     image: 'somali-mufo.png'
   },
@@ -21,7 +21,7 @@ const menuItems = [
     id: 3,
     name: 'Veggie Bayenetu (Platter)',
     description: 'A colorful vegan feast of lentil stews, chickpeas, cabbage, and spinach served on multiple pieces of fresh Anjera.',
-    price: '950',
+    price: '800',
     category: 'Anjera',
     image: 'ethiopian-anjera.png'
   },
@@ -29,7 +29,7 @@ const menuItems = [
     id: 4,
     name: 'Mufo Beef Tibs Platter',
     description: 'Sautéed beef strips with peppers and onions in traditional Somali spices, served with warm, buttery Mufo.',
-    price: '1,300',
+    price: '400',
     category: 'Mufo',
     image: 'somali-mufo.png'
   }
